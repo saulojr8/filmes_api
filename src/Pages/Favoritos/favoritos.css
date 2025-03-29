@@ -38,6 +38,17 @@
     margin-right: 14px;
 }
 
+.btn-voltar {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    
+    padding: 15px 25px; /* Aumenta o tamanho interno */
+    font-size: 20px; /* Aumenta o tamanho do texto */
+    color: rgb(0, 0, 0); /* Cor do texto */
+    cursor: pointer;
+    }
+
 @media (max-width: 768px) {
     .meus-filmes ul{
         width: 400px;

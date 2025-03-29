@@ -4,6 +4,8 @@ import { useParams, useNavigate } from "react-router-dom";
 import './filme-info.css';
 import api from '../../services/api';
 import { toast } from "react-toastify";
+import { ArrowLeft } from "lucide-react";
+import { Link } from 'react-router-dom';
 
 function Filme(){
     const { id } = useParams();
@@ -87,6 +89,8 @@ function Filme(){
                     </a>
                 </button>
             </div>
+            <Link to={'/'} className='btn-voltar'>
+            <ArrowLeft size={40} /></Link>
         </div>
     )
 }

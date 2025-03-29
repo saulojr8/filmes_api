@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import './favoritos.css'
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import { ArrowLeft } from "lucide-react";
 
 function Favoritos(){
     const [filmes, setFilmes] = useState([]);
@@ -43,15 +44,20 @@ useEffect(() => {
                             <span>{item.title}</span>
                             <div>
                                 <Link to={`/filme/${item.id}`}>Ver detalhes</Link>
-                            
+                                
                                 <button onClick={() => excluirFilme(item.id)}>Excluir</button>
                             </div>
                         </li>
                     )
                 })}
             </ul>
+            <Link to={'/'} className='btn-voltar'>
+            <ArrowLeft size={40} /></Link>
         </div>
     )
+
+    
+
 }
 
 
