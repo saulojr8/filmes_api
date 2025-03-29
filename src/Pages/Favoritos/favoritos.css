@@ -37,3 +37,14 @@
     color: #116feb;
     margin-right: 14px;
 }
+
+@media (max-width: 768px) {
+    .meus-filmes ul{
+        width: 400px;
+        font-size: 14px;
+    }
+
+    .meus-filmes span{
+        font-size: 14px;
+    }
+}

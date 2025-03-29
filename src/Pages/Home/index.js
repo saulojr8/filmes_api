@@ -22,7 +22,7 @@ function Home(){
 
             // console.log(response.data.results.slice(0,10)); //mostra somente 10 filmes do resultado
 
-            //passa 10 filmes do resultado do array para o array setFilmes
+            //passa 20 filmes do resultado do array para o array setFilmes, pode ser alterado para uma quantidade menor que 20
             setFilmes(response.data.results.slice(0, 20))
             setLoading(false);
         }
